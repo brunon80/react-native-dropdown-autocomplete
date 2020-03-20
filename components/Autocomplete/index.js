@@ -194,6 +194,7 @@ class Autocomplete extends Component {
             onFocus={event => {
               if (scrollToInput) {
                 scrollToInput(findNodeHandle(event.target));
+                this.triggerChange()
               }
             }}
           />
