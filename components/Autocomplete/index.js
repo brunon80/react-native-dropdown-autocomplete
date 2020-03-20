@@ -192,9 +192,9 @@ class Autocomplete extends Component {
             keyboardType={keyboardType}
             onChangeText={text => this.handleInputChange(text)}
             onFocus={event => {
+              this.triggerChange()
               if (scrollToInput) {
                 scrollToInput(findNodeHandle(event.target));
-                this.triggerChange()
               }
             }}
           />
