@@ -171,6 +171,7 @@ class Autocomplete extends Component {
       placeholderColor,
       data,
       disableFullscreenUI,
+      onDropdownShow,
       ...dropdownProps
     } = this.props;
 
@@ -193,6 +194,9 @@ class Autocomplete extends Component {
             onChangeText={text => this.handleInputChange(text)}
             onFocus={event => {
               this.triggerChange()
+              if (typeof onDropdownShow === "function") {
+                onDropdownShow();
+              }
               if (scrollToInput) {
                 scrollToInput(findNodeHandle(event.target));
               }
