@@ -497,6 +497,7 @@ export default class Dropdown extends PureComponent {
         {modal && (
           <View style={[styles.picker, pickerStyle, pickerStyleOverrides]}>
             <FlatList
+              nestedScrollEnabled
               keyboardShouldPersistTaps="always"
               ref={this.updateScrollRef}
               data={itemData}
