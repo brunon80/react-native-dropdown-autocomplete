@@ -57,7 +57,7 @@ export default StyleSheet.create({
     borderColor: theme.primary,
   },
   separator: {
-    height: 1,
+    // height: 1,
     backgroundColor: theme.divider,
   },
   listItem: {
