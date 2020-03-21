@@ -68,7 +68,7 @@ export default StyleSheet.create({
   },
   listFooter: {
     height: 16.7,
-    borderTopWidth: 1,
+    borderTopWidth: 0,
     borderTopColor: theme.divider,
   },
   listHeader: {
