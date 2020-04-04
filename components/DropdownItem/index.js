@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import React, {PureComponent} from "react";
+import React, {Component} from "react";
 import {Keyboard} from 'react-native';
 import {Button} from "react-native-material-buttons";
 import styles from "./DropdownItem.styles";
 import {theme} from "../../constants/Theme";
 
-export default class DropdownItem extends PureComponent {
+export default class DropdownItem extends Component {
   static defaultProps = {
     color: theme.transparent,
     disabledColor: theme.transparent,

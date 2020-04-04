@@ -1,4 +1,4 @@
-import React, {PureComponent} from "react";
+import React, {Component} from "react";
 import {
   View,
   Animated,
@@ -16,7 +16,7 @@ import {capitalizeFirstLetter, highlightString} from "../../utils/string";
 import {NO_DATA} from "../../constants/Autocomplete";
 import {theme} from "../../constants/Theme";
 import locales from "../../constants/Locales";
-export default class Dropdown extends PureComponent {
+export default class Dropdown extends Component {
   constructor(props) {
     super(props);
 
